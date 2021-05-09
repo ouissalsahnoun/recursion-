@@ -199,8 +199,31 @@ return slicestring(string,position)
 
 
 
+//Q12 
+// Answer 
+
+function modulo(number1,number2){
+
+if (number1<number2){
+	return number1 
+}
+
+ return modulo(number1-number2,number2)
+}
 
 
+
+
+
+
+
+//Q15
+// answer 
+
+function power(base,exponent){
+    if (exponent===0){
+        return 1}
+    return base*power(base,exponent-1)}
 
 
 
