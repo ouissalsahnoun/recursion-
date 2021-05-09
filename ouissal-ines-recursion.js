@@ -157,6 +157,67 @@ return number1+multiply(number1,((number2)-1))
 
 
 
+function inc(x){
+
+	return x+1
+}
+
+
+function range(start,end){
+
+if (start===end-1){
+
+return " "
+}
+return start+1 + ","+ range(inc(start),end)
+}
+
+
+
+
+// Q11
+// Answer 
+
+function slicestring(string,position){
+
+	if(string.slice(position)===" "){ 
+		return position}
+
+		return slicestring(string,position+1)
+}
+
+
+
+function (string){
+
+var position=0
+return slicestring(string,position)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
