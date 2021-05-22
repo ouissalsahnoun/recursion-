@@ -84,7 +84,7 @@ if (start===end){
 	return start + sumbetween(start+1,end)
 }
 
-
+//to redo
 
 
 
@@ -178,23 +178,13 @@ return start+1 + ","+ range(inc(start),end)
 // Q11
 // Answer 
 
-function slicestring(string,position){
+function stringLength(string){
+    if (string.slice(0,(string.length-1))===""){
+    	return 1
+    }
 
-	if(string.slice(position)===" "){ 
-		return position}
-
-		return slicestring(string,position+1)
+ return 1+ stringLength(string.slice(0,(string.length-1)))   	
 }
-
-
-
-function (string){
-
-var position=0
-return slicestring(string,position)
-
-}
-
 
 
 
@@ -212,6 +202,16 @@ if (number1<number2){
 }
 
 
+// Q13
+
+
+
+
+
+
+
+//Q14
+
 
 
 
@@ -226,6 +226,17 @@ function power(base,exponent){
     return base*power(base,exponent-1)}
 
 
+//Q16
+
+
+function reverseString(string){
+
+	if ( string.slice(0,(string.length)-1)===""){
+		return string[0]
+	}
+
+ return string[string.length-1] + stringLength(string.slice(0.(string.length-1)))
+}
 
 
 
