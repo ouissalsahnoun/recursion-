@@ -228,7 +228,14 @@ return counter + countChars(string.slice(1),char)
 
 
 function indexOf(string,char){
- 
+ if (string.length===0){
+ 	retur undefined 
+ }
+if (string[0]===char) {
+	return 0
+}
+return 1+ indexOf(string.slice(1),char)
+
  }
 
 
@@ -271,6 +278,10 @@ function greatestCommonDivisor(num1,num2){
 
 
 //Q18
+
+
+
+
 
 
 //Q19
