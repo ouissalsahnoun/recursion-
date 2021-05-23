@@ -203,7 +203,21 @@ if (number1<number2){
 
 
 // Q13
+  function countChars(string,char){
+  	var counter = 0
 
+    if (string.length===0){
+
+    	return 0
+    }
+
+  
+    if (string[0]===char) { 
+     counter ++}
+    
+return counter + countChars(string.slice(1),char)
+
+  }
 
 
 
@@ -212,6 +226,10 @@ if (number1<number2){
 
 //Q14
 
+
+function indexOf(string,char){
+ 
+ }
 
 
 
@@ -239,6 +257,23 @@ function reverseString(string){
 }
 
 
+//Q17
+function greatestCommonDivisor(num1,num2){
+
+   if (num2 ===0){
+
+   	return num1
+   }
+
+  return greatestCommonDivisor(num2,(num1%num2))
+}
+
+
+
+//Q18
+
+
+//Q19
 
 
 
